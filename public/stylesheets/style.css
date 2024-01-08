@@ -1,8 +1,35 @@
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.header {
+  background-color: #00B7FF;
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  color: #fff
+}
+
+.container {
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem
+}
+
+form > input {
+  margin: 0.5rem;
 }

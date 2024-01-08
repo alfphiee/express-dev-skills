@@ -1,0 +1,14 @@
+    <%- include('../header.ejs') %>
+    <div class="container">
+      <h2>GA Units</h2>
+      <ul>
+        <% skills.forEach((skill) => { %>
+        <li>
+          <a href="/skills/<%=skill.id%>"><%=skill.section_name%></a>
+        </li>
+        <% }) %>
+      </ul>
+      <a href="/skills/new">Add New Skills</a>
+    </div>
+  </body>
+</html>

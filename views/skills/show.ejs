@@ -1,0 +1,12 @@
+<%- include('../header.ejs') %>
+    <div class="container">
+      <h2><%= skill.section_name %> - Unit: <%= skill.unit %></h2>
+      <img src="<%= skill.img %>"/>
+
+      <p><%= skill.complete ? 'Completed ✅' : skill.inprogress ? 'In Progress 🚧' : 'Not Started ❌' %></p>
+      <form method="POST" action="/skills/<%= skill.id %>?_method=DELETE">
+      <button type="submit">Delete Skill</button>
+      </form>
+    </div>
+  </body>
+</html>
